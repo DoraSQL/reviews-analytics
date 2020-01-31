@@ -37,5 +37,11 @@ for d in data:
 print('一共有', len(good), '筆留言')
 print(good[0])
 
+#------------------------------
+#快寫法
+good= [d for d in data if 'good' in d]
+print(good)
 
+bad= ['bad' in d for d in data]
+print(bad)
 
