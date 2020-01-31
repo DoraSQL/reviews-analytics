@@ -16,7 +16,7 @@ for d in data:
 print('留言平均長度是', sum_len/len(data)) #len(data)是指data的個數
 
 
-
+#------------------------------
 # 找出留言字數小於100的留言有幾筆?
 new=[]
 for d in data:
@@ -25,5 +25,17 @@ for d in data:
 print('一共有', len(new), '筆留言長度小於100')
 print(new[0])
 print(new[1])
+
+
+#------------------------------
+#找出留言內包含good的流言有幾筆?
+
+good=[]
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('一共有', len(good), '筆留言')
+print(good[0])
+
 
 
